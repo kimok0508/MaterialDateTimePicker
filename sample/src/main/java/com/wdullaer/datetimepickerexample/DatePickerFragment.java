@@ -1,8 +1,8 @@
 package com.wdullaer.datetimepickerexample;
 
-import android.app.Fragment;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +15,6 @@ import android.widget.TextView;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
 import java.util.Calendar;
-import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -139,7 +138,7 @@ public class DatePickerFragment extends Fragment implements DatePickerDialog.OnD
                         dpd.setScrollOrientation(DatePickerDialog.ScrollOrientation.VERTICAL);
                     }
                 }
-                dpd.show(getFragmentManager(), "Datepickerdialog");
+                dpd.show(getChildFragmentManager(), "Datepickerdialog");
             }
         });
 
